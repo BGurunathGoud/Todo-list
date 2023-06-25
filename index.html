@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Attaching Style sheet -->
+        <link rel="stylesheet" href="StyleTodoList.css">
+        <title>Todo-list</title>
+    </head>
+
+    <body>
+
+        <div id="List-Container">
+
+            <div class="ToDo-lists">
+                <h2 id="header"> To-Do Lists &ensp;<img
+                        src="https://cdn.pixabay.com/photo/2016/03/31/19/50/checklist-1295319_1280.png" />
+                </h2>
+
+                <div class="typeBar" id="list_type">
+                    <input type="text" placeholder="Enter Details Here..." id="Task_detail" />
+                    <button id="addList-btn" class="AddBtn"><b><i>Submit Task</i></b></button>
+                </div>
+                <hr>
+
+                <div>
+                    <ul id="Todo-list-tasks">
+
+
+
+                    </ul>
+                </div> 
+                <br>
+
+                <div id="Tasks-inprogress"><b><span id="Tasks-left">0</span> :Tasks left</b></div>
+            </div>
+        </div>
+         <!-- Attaching Script file -->
+        <script src="TodoList.js"></script>
+    </body>
+</html>

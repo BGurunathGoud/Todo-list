@@ -1,0 +1,175 @@
+/* head */
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    margin: 0px;
+    padding: 0px;
+}
+/* Body */
+#List-Container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom right, blue, yellow);
+    padding: 6px;
+}
+
+/*  Style's of List container */
+.ToDo-lists{
+    width: 100%;
+    max-width: 450px;
+    background: rgb(222, 221, 221);
+    margin: 80px auto 10px;
+    padding: 45px 35px 65px;
+    border-radius: 25px;
+}
+.ToDo-lists:hover{
+    background-color: rgba(247, 247, 247, 0.473);
+    transition: 0.6s;
+}
+
+/* Style's of header*/
+.ToDo-lists h2{
+    color: darkgreen;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(71, 177, 0, 0.479);
+}
+
+/* Style's of img*/
+.ToDo-lists h2 img{
+    width: 48px;
+    height: 48px;
+}
+
+/* Style's of typebar where task details are entered and added to lists of tasks.*/
+.typeBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #efbec9;
+    border-radius: 40px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+.typeBar:hover{
+    background-color: rgba(241, 241, 241, 0.888);
+    transition: 0.2s;
+}
+
+#Task_detail{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+/* Style's of the Submit Task button */
+.AddBtn{
+    border: double;
+    outline: none;
+    padding: 13px 30px;
+    background: #056874f5;
+    color: linen;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.AddBtn:hover{
+    background-color: #074e5e;
+    transition: 0.6s;
+}
+
+/* Below is the styles for 'lists' that are displayed whenever is added in Tasks lists */
+#Todo-list-tasks{
+    margin-top: 18px;
+    border-radius: 24px;
+}
+
+/* Here we remove the bullet-signs for the ul-list items */
+ul li{
+    list-style: none;
+    font-size: 18px;
+    padding: 13px 9px 13px 18px;
+    user-select: none;
+    cursor: auto;
+    position: relative;
+
+}
+
+/* This display's n-th odd elements in different color for looking nice on task list*/
+ul li:nth-child(odd) {
+    background: rgb(226, 232, 116);
+    color: black;
+    border-radius: 26px;
+}
+
+/* Style's of delete button */
+ul li span{
+    position: absolute;
+    background-color: rgb(244, 181, 181);
+    right: 2px;
+    top: 10px;
+    width: 26px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 47%;
+    margin-right: 15px;
+    margin-top: 3px;
+}
+
+/* Style's of delete button when cursor is moved near it */
+ul li span:hover{
+    background-color: rgb(198, 7, 7);
+    transition: 0.6s;
+    color: linen;
+    position: absolute;
+}
+
+ul li input{
+    cursor: auto;
+}
+
+/* Style's of checkbox */
+input[type="checkbox"]{
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: honeydew;
+    border-radius: 14px;
+    cursor: -webkit-grab;
+}
+
+/* Style's of checkbox when cursor is moved near it */
+input[type="checkbox"]:hover{
+    background-color: rgb(8, 8, 8);
+    transition: 0.4s;
+}
+
+/* Style's of the checkbox to differentiate the difference between checked list and tasks left */
+input[type="checkbox"]:checked{
+    background-color: rgb(9, 9, 9);
+}
+
+/* Style's of the list of tasks displayed on tasks screen */
+label{
+    color: rgb(38, 2, 2);
+    text-shadow: 2px 2px 5px darkred;
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 10px; 
+}
+
+/* Style's of inprogress tasks counts*/
+
+#Tasks-inprogress{
+    
+    margin-left: 15px;
+    color: rgb(11, 10, 10);
+    text-shadow: 2px 2px 5px darkred;
+}
